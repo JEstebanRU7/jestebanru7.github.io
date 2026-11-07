@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>German with Esteban</title>
+<meta name="description" content="Aprende alemán cuidando a tu mascota virtual. Learn German by taking care of your virtual pet.">
+<link rel="icon" href="favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="German with Esteban">
+<meta property="og:description" content="Aprende alemán cuidando a tu mascota virtual · Learn German by taking care of your virtual pet">
+<meta property="og:image" content="https://jestebanru7.github.io/banner.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#FFF8FB; --card:#FFFFFF; --text:#2E2440; --muted:#6E6482; --line:#EEE3F5;
+    --pink:#FF6B9D; --pink2:#FF8FAD; --purple:#8A4FD8; --shadow:0 10px 30px rgba(80,40,120,0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#17131D; --card:#221C2B; --text:#F1ECF7; --muted:#ADA4BB; --line:#352C40;
+            --purple:#B98CFF; --shadow:0 10px 30px rgba(0,0,0,0.35); }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:16px/1.6 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:20px 16px 48px; }
+  .flag { height:6px; border-radius:3px; margin-bottom:18px;
+          background:linear-gradient(90deg,#111 0 33.3%,#DD0000 33.3% 66.6%,#FFCE00 66.6%); }
+  .lang { display:flex; justify-content:flex-end; gap:6px; margin-bottom:12px; }
+  .lang button { font:inherit; font-size:13px; font-weight:800; color:var(--muted); background:var(--card);
+                 border:1.5px solid var(--line); border-radius:999px; padding:3px 12px; cursor:pointer; }
+  .lang button.on { color:#fff; background:var(--purple); border-color:var(--purple); }
+  .hero { display:flex; align-items:center; gap:16px; margin-bottom:18px; }
+  .hero img { width:84px; height:84px; border-radius:22px; box-shadow:var(--shadow); flex-shrink:0; }
+  h1 { font-size:1.75rem; font-weight:900; line-height:1.15; margin:0; }
+  .tagline { color:var(--muted); font-weight:700; margin:4px 0 0; }
+  .banner { width:100%; height:auto; aspect-ratio:1024/500; display:block; border-radius:20px;
+            box-shadow:var(--shadow); margin:4px 0 22px; object-fit:cover; }
+  .card { background:var(--card); border:1.5px solid var(--line); border-radius:20px;
+          padding:18px 18px; margin-bottom:14px; box-shadow:var(--shadow); }
+  h2 { font-size:1.1rem; font-weight:900; margin:0 0 8px; }
+  ul { margin:0; padding-left:20px; }
+  li { margin:3px 0; }
+  .btns { display:flex; flex-wrap:wrap; gap:10px; margin-top:6px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:900;
+         border-radius:999px; padding:11px 20px; font-size:15px; }
+  .btn-play { color:#fff; background:linear-gradient(135deg,var(--pink2),var(--pink));
+              box-shadow:0 4px 14px rgba(255,107,157,0.35); }
+  .btn-yt { color:#fff; background:#E52D27; box-shadow:0 4px 14px rgba(229,45,39,0.3); }
+  .btn svg { width:20px; height:20px; flex-shrink:0; }
+  a { color:var(--purple); font-weight:800; }
+  .contact a { word-break:break-all; }
+  footer { color:var(--muted); font-size:13px; text-align:center; margin-top:26px; }
+  [data-l] { display:none; }
+  html[lang="es"] [data-l="es"], html[lang="en"] [data-l="en"] { display:revert; }
+  @media (max-width:420px) { h1 { font-size:1.45rem; } .hero img { width:68px; height:68px; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="flag" aria-hidden="true"></div>
+  <nav class="lang" aria-label="Idioma / Language">
+    <button type="button" data-set="es">Español</button>
+    <button type="button" data-set="en">English</button>
+  </nav>
+
+  <header class="hero">
+    <img src="icon.webp" alt="" width="84" height="84">
+    <div>
+      <h1>German with Esteban</h1>
+      <p class="tagline">
+        <span data-l="es">Aprende alemán cuidando a tu mascota virtual</span>
+        <span data-l="en">Learn German by taking care of your virtual pet</span>
+      </p>
+    </div>
+  </header>
+
+  <img class="banner" src="banner.webp" alt="Esteban, Felix, Lucky y Silvestre">
+
+  <section class="card">
+    <h2><span data-l="es">¿Qué es?</span><span data-l="en">What is it?</span></h2>
+    <p data-l="es" style="margin:0 0 8px">Un juego tipo Tamagotchi para aprender vocabulario alemán, del nivel A1 al C2. Cuidas de tu mascota respondiendo preguntas, y avanzas por mundos con jefes, minijuegos y diplomas.</p>
+    <p data-l="en" style="margin:0 0 8px">A Tamagotchi-style game to learn German vocabulary, from level A1 to C2. You take care of your pet by answering questions, and progress through worlds with bosses, minigames and diplomas.</p>
+    <ul data-l="es">
+      <li>Más de 11.000 palabras con ejemplos y pronunciación.</li>
+      <li>Sustantivos, plurales, géneros, verbos, Präteritum y Perfekt.</li>
+      <li>6 minijuegos, mascotas y skins para desbloquear.</li>
+      <li>Disponible en 14 idiomas.</li>
+    </ul>
+    <ul data-l="en">
+      <li>More than 11,000 words with examples and pronunciation.</li>
+      <li>Nouns, plurals, genders, verbs, Präteritum and Perfekt.</li>
+      <li>6 minigames, plus pets and skins to unlock.</li>
+      <li>Available in 14 languages.</li>
+    </ul>
+    <div class="btns">
+      <a class="btn btn-play" href="https://play.google.com/store/apps/details?id=com.jestebanru.germanwithesteban">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4 2.8v18.4c0 .6.7 1 1.2.7l15.9-9.2c.5-.3.5-1.1 0-1.4L5.2 2.1C4.7 1.8 4 2.2 4 2.8z"/></svg>
+        <span data-l="es">Google Play</span><span data-l="en">Google Play</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2><span data-l="es">Aprende también en YouTube</span><span data-l="en">Also learn on YouTube</span></h2>
+    <p data-l="es" style="margin:0 0 8px">Clases y consejos para aprender alemán en el canal de Esteban.</p>
+    <p data-l="en" style="margin:0 0 8px">Lessons and tips for learning German on Esteban's channel.</p>
+    <div class="btns">
+      <a class="btn btn-yt" href="https://www.youtube.com/@estebanenaleman">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23 7.2a3 3 0 0 0-2.1-2.1C19 4.6 12 4.6 12 4.6s-7 0-8.9.5A3 3 0 0 0 1 7.2 31 31 0 0 0 .5 12a31 31 0 0 0 .5 4.8 3 3 0 0 0 2.1 2.1c1.9.5 8.9.5 8.9.5s7 0 8.9-.5a3 3 0 0 0 2.1-2.1 31 31 0 0 0 .5-4.8 31 31 0 0 0-.5-4.8zM9.8 15.1V8.9L15.4 12l-5.6 3.1z"/></svg>
+        @estebanenaleman
+      </a>
+    </div>
+  </section>
+
+  <section class="card contact">
+    <h2><span data-l="es">Contacto</span><span data-l="en">Contact</span></h2>
+    <p style="margin:0 0 6px">
+      <span data-l="es">Desarrollado y publicado por</span><span data-l="en">Developed and published by</span>
+      <strong>JEstebanRU</strong> (Jeisson Esteban Rodriguez Urrea).
+    </p>
+    <p style="margin:0 0 6px">✉️ <a href="mailto:esteban07e@gmail.com">esteban07e@gmail.com</a></p>
+    <p style="margin:0">🔒 <a href="privacy/"><span data-l="es">Política de privacidad</span><span data-l="en">Privacy Policy</span></a></p>
+  </section>
+
+  <footer>© 2026 JEstebanRU · German with Esteban</footer>
+</main>
+<script>
+  (function () {
+    var KEY = 'gwe_site_lang';
+    function set(l) {
+      document.documentElement.lang = l;
+      document.querySelectorAll('.lang button').forEach(function (b) { b.classList.toggle('on', b.dataset.set === l); });
+      try { localStorage.setItem(KEY, l); } catch (e) {}
+    }
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    set(saved || ((navigator.language || 'en').toLowerCase().indexOf('es') === 0 ? 'es' : 'en'));
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.addEventListener('click', function () { set(b.dataset.set); });
+    });
+  })();
+</script>
+</body>
+</html>
