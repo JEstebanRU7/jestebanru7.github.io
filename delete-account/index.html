@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Borrar cuenta · Delete account — German with Esteban</title>
+<meta name="description" content="Cómo borrar tu cuenta y tus datos de German with Esteban. How to delete your German with Esteban account and data.">
+<link rel="icon" href="../favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../apple-touch-icon.png">
+<meta property="og:title" content="German with Esteban">
+<meta property="og:description" content="Aprende alemán cuidando a tu mascota virtual · Learn German by taking care of your virtual pet">
+<meta property="og:image" content="https://jestebanru7.github.io/banner.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:#FFF8FB; --card:#FFFFFF; --text:#2E2440; --muted:#6E6482; --line:#EEE3F5;
+    --pink:#FF6B9D; --pink2:#FF8FAD; --purple:#8A4FD8; --shadow:0 10px 30px rgba(80,40,120,0.12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#17131D; --card:#221C2B; --text:#F1ECF7; --muted:#ADA4BB; --line:#352C40;
+            --purple:#B98CFF; --shadow:0 10px 30px rgba(0,0,0,0.35); }
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text);
+         font:16px/1.6 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:20px 16px 48px; }
+  .flag { height:6px; border-radius:3px; margin-bottom:18px;
+          background:linear-gradient(90deg,#111 0 33.3%,#DD0000 33.3% 66.6%,#FFCE00 66.6%); }
+  .lang { display:flex; justify-content:flex-end; gap:6px; margin-bottom:12px; }
+  .lang button { font:inherit; font-size:13px; font-weight:800; color:var(--muted); background:var(--card);
+                 border:1.5px solid var(--line); border-radius:999px; padding:3px 12px; cursor:pointer; }
+  .lang button.on { color:#fff; background:var(--purple); border-color:var(--purple); }
+  .hero { display:flex; align-items:center; gap:16px; margin-bottom:18px; }
+  .hero img { width:84px; height:84px; border-radius:22px; box-shadow:var(--shadow); flex-shrink:0; }
+  h1 { font-size:1.75rem; font-weight:900; line-height:1.15; margin:0; }
+  .tagline { color:var(--muted); font-weight:700; margin:4px 0 0; }
+  .banner { width:100%; height:auto; aspect-ratio:1024/500; display:block; border-radius:20px;
+            box-shadow:var(--shadow); margin:4px 0 22px; object-fit:cover; }
+  .card { background:var(--card); border:1.5px solid var(--line); border-radius:20px;
+          padding:18px 18px; margin-bottom:14px; box-shadow:var(--shadow); }
+  h2 { font-size:1.1rem; font-weight:900; margin:0 0 8px; }
+  ul { margin:0; padding-left:20px; }
+  li { margin:3px 0; }
+  .btns { display:flex; flex-wrap:wrap; gap:10px; margin-top:6px; }
+  .btn { display:inline-flex; align-items:center; gap:8px; text-decoration:none; font-weight:900;
+         border-radius:999px; padding:11px 20px; font-size:15px; }
+  .btn-play { color:#fff; background:linear-gradient(135deg,var(--pink2),var(--pink));
+              box-shadow:0 4px 14px rgba(255,107,157,0.35); }
+  .btn-yt { color:#fff; background:#E52D27; box-shadow:0 4px 14px rgba(229,45,39,0.3); }
+  .btn svg { width:20px; height:20px; flex-shrink:0; }
+  a { color:var(--purple); font-weight:800; }
+  .contact a { word-break:break-all; }
+  footer { color:var(--muted); font-size:13px; text-align:center; margin-top:26px; }
+  [data-l] { display:none; }
+  html[lang="es"] [data-l="es"], html[lang="en"] [data-l="en"] { display:revert; }
+  ol { margin:0; padding-left:22px; } ol li { margin:4px 0; }
+  .note { color:var(--muted); font-size:14px; margin:8px 0 0; }
+  @media (max-width:420px) { h1 { font-size:1.45rem; } .hero img { width:68px; height:68px; } }
+</style>
+</head>
+<body>
+<main>
+  <div class="flag" aria-hidden="true"></div>
+  <nav class="lang" aria-label="Idioma / Language">
+    <button type="button" data-set="es">Español</button>
+    <button type="button" data-set="en">English</button>
+  </nav>
+
+  <header class="hero">
+    <img src="../icon.webp" alt="" width="84" height="84">
+    <div>
+      <h1><span data-l="es">Borrar tu cuenta</span><span data-l="en">Delete your account</span></h1>
+      <p class="tagline">German with Esteban · JEstebanRU</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <h2><span data-l="es">Desde la app (inmediato)</span><span data-l="en">From the app (immediate)</span></h2>
+    <ol data-l="es">
+      <li>Abre <strong>German with Esteban</strong> y ve a <strong>Inicio</strong>.</li>
+      <li>Pulsa ⚙️ <strong>Configuración</strong> → sección <strong>Cuenta y nube</strong>.</li>
+      <li>Pulsa <strong>🗑️ Borrar cuenta y datos online</strong> y confirma con <strong>Borrar todo</strong>.</li>
+    </ol>
+    <ol data-l="en">
+      <li>Open <strong>German with Esteban</strong> and go to <strong>Home</strong>.</li>
+      <li>Tap ⚙️ <strong>Settings</strong> → <strong>Account &amp; cloud</strong> section.</li>
+      <li>Tap <strong>🗑️ Delete account and online data</strong> and confirm with <strong>Delete everything</strong>.</li>
+    </ol>
+  </section>
+
+  <section class="card contact">
+    <h2><span data-l="es">Sin la app (por correo)</span><span data-l="en">Without the app (by email)</span></h2>
+    <p data-l="es" style="margin:0 0 6px">Si ya no tienes la app instalada, escribe a <a href="mailto:esteban07e@gmail.com?subject=Borrar%20cuenta%20-%20German%20with%20Esteban">esteban07e@gmail.com</a> con el asunto <strong>"Borrar cuenta"</strong> e indica:</p>
+    <p data-l="en" style="margin:0 0 6px">If the app is no longer installed, write to <a href="mailto:esteban07e@gmail.com?subject=Delete%20account%20-%20German%20with%20Esteban">esteban07e@gmail.com</a> with the subject <strong>"Delete account"</strong> and include:</p>
+    <ul data-l="es">
+      <li>el correo de Google con el que iniciaste sesión en la app, <strong>o</strong></li>
+      <li>tu <strong>ID de jugador</strong> (aparece en Configuración → Cuenta y nube), o el nombre que usabas en las clasificaciones.</li>
+    </ul>
+    <ul data-l="en">
+      <li>the Google email you signed in with in the app, <strong>or</strong></li>
+      <li>your <strong>Player ID</strong> (shown in Settings → Account &amp; cloud), or the name you used on the leaderboards.</li>
+    </ul>
+    <p class="note" data-l="es">Lo borraremos en un plazo máximo de 30 días y te confirmaremos por correo.</p>
+    <p class="note" data-l="en">We will delete it within 30 days at most and confirm by email.</p>
+  </section>
+
+  <section class="card">
+    <h2><span data-l="es">Qué se borra</span><span data-l="en">What is deleted</span></h2>
+    <ul data-l="es">
+      <li>Tu cuenta de jugador (anónima o vinculada a Google).</li>
+      <li>Tus puntuaciones y nombre en las clasificaciones online.</li>
+      <li>Tu copia del progreso en la nube.</li>
+    </ul>
+    <ul data-l="en">
+      <li>Your player account (anonymous or linked to Google).</li>
+      <li>Your scores and name on the online leaderboards.</li>
+      <li>Your cloud copy of your progress.</li>
+    </ul>
+    <h2 style="margin-top:14px"><span data-l="es">Qué se conserva</span><span data-l="en">What is kept</span></h2>
+    <ul data-l="es">
+      <li>El progreso guardado <strong>en tu móvil</strong> (no sale del dispositivo; se borra desinstalando la app).</li>
+      <li>Las denuncias de nombres que hayas enviado, solo para la moderación, hasta 12 meses.</li>
+      <li>Datos de uso anónimos (Google Analytics), que no están ligados a tu cuenta y Google elimina automáticamente a los 14 meses.</li>
+    </ul>
+    <ul data-l="en">
+      <li>The progress saved <strong>on your phone</strong> (it never leaves the device; uninstalling the app deletes it).</li>
+      <li>Name reports you sent, for moderation only, for up to 12 months.</li>
+      <li>Anonymous usage data (Google Analytics), which is not linked to your account and is automatically deleted by Google after 14 months.</li>
+    </ul>
+  </section>
+
+  <p style="text-align:center"><a href="../"><span data-l="es">← Volver</span><span data-l="en">← Back</span></a> · <a href="../privacy/"><span data-l="es">Política de privacidad</span><span data-l="en">Privacy Policy</span></a></p>
+  <footer>© 2026 JEstebanRU · German with Esteban</footer>
+</main>
+<script>
+  (function () {
+    var KEY = 'gwe_site_lang';
+    function set(l) {
+      document.documentElement.lang = l;
+      document.querySelectorAll('.lang button').forEach(function (b) { b.classList.toggle('on', b.dataset.set === l); });
+      try { localStorage.setItem(KEY, l); } catch (e) {}
+    }
+    var saved = null;
+    try { saved = localStorage.getItem(KEY); } catch (e) {}
+    set(saved || ((navigator.language || 'en').toLowerCase().indexOf('es') === 0 ? 'es' : 'en'));
+    document.querySelectorAll('.lang button').forEach(function (b) {
+      b.addEventListener('click', function () { set(b.dataset.set); });
+    });
+  })();
+</script>
+</body>
+</html>
